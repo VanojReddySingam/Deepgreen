@@ -84,6 +84,7 @@
       Stay tuned as we continue to roll out features and guides to support our green revolution.
     </p>
   </article>
+=======
 <section class="features">
   <div class="feature-grid">
 
@@ -137,6 +138,7 @@
     Stay tuned as we continue to roll out features and guides to support our green revolution.
   </p>
 </article>
+>>>>>>> Stashed changes
 
   <!-- Footer -->
   <footer style="text-align:center; margin:2em 0 1em 0; color:black;">

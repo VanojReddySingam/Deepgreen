@@ -4,6 +4,10 @@
   <title>Soil Detection</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
 </head>
 <body>
 <?php include 'nav.php'; ?>

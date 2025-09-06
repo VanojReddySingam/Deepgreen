@@ -293,6 +293,7 @@ button:hover {
   margin-bottom: 1.5em;
 }
 
+=======
 body { font-family: Arial,sans-serif; background: #f6faf7; margin: 0;}
 nav { background: #02796b; color: #fff; padding: 16px;}
 nav a { color: #fff; margin: 0 10px; text-decoration: none; }
@@ -305,3 +306,5 @@ button { background: #02c874; color: #fff; border: none; border-radius: 5px; cur
 #loading {color: #d00;}
 h2, h3, h4 {margin-top:1em;}
 @media (max-width:900px) {.container {flex-direction:column;align-items:center;} }
+
+>>>>>>> Stashed changes
