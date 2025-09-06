@@ -1,12 +1,293 @@
-body { font-family: Arial,sans-serif; background: #f6faf7; margin: 0;}
-nav { background: #02796b; color: #fff; padding: 16px;}
-nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-section, form, .container { background: #fff; margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 600px;}
-label { font-weight: 600;}
-input, select, button { margin: 6px 0; padding: 8px;}
-button { background: #02c874; color: #fff; border: none; border-radius: 5px; cursor: pointer;}
-.card {box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
-.start-btn { background: #00a46c; color: #fff; border-radius: 4px; padding: 0.5em 1.2em; font-weight: 600; text-decoration: none; display:inline-block; border:none; }
-#loading {color: #d00;}
-h2, h3, h4 {margin-top:1em;}
-@media (max-width:900px) {.container {flex-direction:column;align-items:center;} }
+/* ---------- Global Styles ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffeaa7, #a29bfe, #81ecec);
+  margin: 0;
+  color: #2d3436;
+  transition: background 0.6s ease;
+  overflow-x: hidden;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: flex;
+  justify-content: center; /* centers the nav links */
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #fd79a8, #74b9ff);
+  color: #fff;
+  padding: 18px 36px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- Section / Forms / Containers ---------- */
+section, form, .container {
+  background: #ffffffdd;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 14px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.9s ease forwards;
+  opacity: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ---------- Inputs & Buttons ---------- */
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  color: #2d3436;
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  background-color: #f9f9ff;
+}
+
+input:focus, select:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #fd79a8, #a29bfe);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(162, 155, 254, 0.4);
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(162, 155, 254, 0.6);
+}
+
+/* ---------- Start Button ---------- */
+.start-btn {
+  background: linear-gradient(90deg, #55efc4, #81ecec);
+  color: #2d3436;
+  border-radius: 10px;
+  padding: 0.8em 1.6em;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: 0.4s ease;
+  box-shadow: 0 6px 18px rgba(85, 239, 196, 0.5);
+}
+
+.start-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(85, 239, 196, 0.6);
+}
+
+/* ---------- Card (Image Background + Overlay) ---------- */
+.card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+.card h3,
+.card .action-row {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.card h3 {
+  margin-bottom: 1.2em;
+  font-size: 1.3rem;
+}
+
+/* ---------- Card Background Images ---------- */
+.soil-card { background-image: url('assets/soil.png'); }
+.fertilizer-card { background-image: url('assets/fertilizer.png'); }
+.plant-card { background-image: url('assets/plant.png'); }
+.weather-card { background-image: url('assets/weather.png'); }
+.crop-card { background-image: url('assets/crop.png'); }
+
+/* ---------- Action Row ---------- */
+.action-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .action-row {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* ---------- Hero Header ---------- */
+/* ---------- Hero Header ---------- */
+.hero-header {
+  width: 100%;
+  height: 20vh; /* smaller height */
+  background: url('assets/farmer-ploughing.jpg') center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0; /* remove big padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;          /* remove top/bottom margin */
+  line-height: 1.1;   /* tighten spacing */
+}
+
+.hero-subtitle {
+  color: #f1f1f1;
+  font-size: 0.8rem;
+  margin: 0.5em 0 0 0; /* only small gap above */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  line-height: 1.3;
+}
+
+
+/* Hero content below image */
+.hero-content {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+/* ---------- Feature Section ---------- */
+.features {
+  max-width: 1200px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+}
+
+/* ---------- Article Section ---------- */
+.article-section {
+  max-width: 800px;
+  margin: 4em auto 2em auto;
+  padding: 30px;
+  background: #ffffffee;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-size: 1.05em;
+  color: #444;
+  line-height: 1.7;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.article-section h2 {
+  font-size: 1.8rem;
+  color: #00796b;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.article-section p {
+  margin-bottom: 1.5em;
+}
