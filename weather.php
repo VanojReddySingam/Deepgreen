@@ -14,7 +14,7 @@
 </form>
 <?php
 if(isset($_GET['city'])) {
-  $apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
+  $apiKey = fe6e998dd60261f2c2c1220f7bb82ee2;
   $city = urlencode($_GET['city']);
   $url = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric";
   $ch = curl_init();
