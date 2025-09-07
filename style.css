@@ -293,15 +293,3 @@ button:hover {
   margin-bottom: 1.5em;
 }
 
-/* body { font-family: Arial,sans-serif; background: #f6faf7; margin: 0;}
-nav { background: #02796b; color: #fff; padding: 16px;}
-nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-section, form, .container { background: #fff; margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 600px;}
-label { font-weight: 600;}
-input, select, button { margin: 6px 0; padding: 8px;}
-button { background: #02c874; color: #fff; border: none; border-radius: 5px; cursor: pointer;}
-.card {box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
-.start-btn { background: #00a46c; color: #fff; border-radius: 4px; padding: 0.5em 1.2em; font-weight: 600; text-decoration: none; display:inline-block; border:none; }
-#loading {color: #d00;}
-h2, h3, h4 {margin-top:1em;}
-@media (max-width:900px) {.container {flex-direction:column;align-items:center;} } */

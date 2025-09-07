@@ -1,11 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeepGreen - Plant Disease & Crop Advisory Portal</title>
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -21,6 +22,20 @@
 
   <!-- Navigation -->
   <?php include 'nav.php'; ?>
+
+  <!-- Dynamic Greeting Text -->
+  <?php if (isset($_SESSION['username'])): ?>
+    <p style="text-align:left; margin:10px 0 0 10px; font-weight:900; font-size:1.2em; color:black;">
+        <?php 
+        if (!empty($_SESSION['new_signup'])) {
+            echo "Hello, " . htmlspecialchars($_SESSION['username']) . " 👋";
+            unset($_SESSION['new_signup']); // only show once
+        } else {
+            echo "Welcome, " . htmlspecialchars($_SESSION['username']) . "!";
+        }
+        ?>
+    </p>
+  <?php endif; ?>
 
   <!-- Welcome Section -->
   <section class="hero-content">
@@ -84,7 +99,6 @@
       Stay tuned as we continue to roll out features and guides to support our green revolution.
     </p>
   </article>
-
 
   <!-- Footer -->
   <footer style="text-align:center; margin:2em 0 1em 0; color:black;">

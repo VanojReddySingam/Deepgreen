@@ -1,10 +1,15 @@
 <?php
 session_start();
+
+// Clear all session data
 session_unset();
 session_destroy();
-include 'db.php'; 
-include 'nav.php';
+
+// Redirect to index.php after logout
+header("Location: index.php");
+exit;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
