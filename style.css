@@ -293,3 +293,37 @@ button:hover {
   margin-bottom: 1.5em;
 }
 
+.weather-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.weather-info img {
+  vertical-align: middle;
+  width: 80px;
+  height: auto;
+}
+
+.forecast-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 140px;
+}
+
+.forecast-day img {
+  width: 60px;
+  height: auto;
+}
+
