@@ -89,16 +89,18 @@ session_start();
 
   <!-- Article Section -->
   <article class="article-section">
-    <h2>Latest in Sustainable Farming</h2>
-    <p>
-      As agriculture moves toward more sustainable practices, technologies like AI-based plant disease detection,
-      precision fertilizer recommendations, and weather-integrated crop planning are reshaping the future of farming.
-    </p>
-    <p>
-      DeepGreen is committed to empowering farmers with tools that increase yield, reduce waste, and promote eco-friendly practices. 
-      Stay tuned as we continue to roll out features and guides to support our green revolution.
-    </p>
-  </article>
+  <h2>Sustainable Farming</h2>
+  <img src="assets/sustainable-farming.jpg" alt="Sustainable Farming" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+  <p>
+    As agriculture moves toward more sustainable practices, technologies like AI-based plant disease detection,
+    precision fertilizer recommendations, and weather-integrated crop planning are reshaping the future of farming.
+  </p>
+  <p>
+    DeepGreen is committed to empowering farmers with tools that increase yield, reduce waste, and promote eco-friendly practices. 
+    Stay tuned as we continue to roll out features and guides to support our green revolution.
+  </p>
+</article>
+
 
   <!-- Footer -->
   <footer style="text-align:center; margin:2em 0 1em 0; color:black;">
