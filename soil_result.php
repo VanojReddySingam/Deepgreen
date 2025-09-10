@@ -56,7 +56,7 @@ if (isset($_FILES['soil_image']) && $_FILES['soil_image']['error'] === UPLOAD_ER
     "contents" => [[
       "parts" => [
         [
-          "text" => "Analyze this soil image. Detect soil type, fertility status, and suggest fertilizer. Return ONLY JSON in this format: {\"soil_type\": \"...\",\"fertility\": \"...\",\"suggested_fertilizer\": \"...\"}"
+          "text" => "Analyze this soil image. Detect soil type, fertility status, and suggest fertilizer,give in short sentences. Return ONLY JSON in this format: {\"soil_type\": \"...\",\"fertility\": \"...\",\"suggested_fertilizer\": \"...\"}"
         ],
         [
           "inlineData" => [
