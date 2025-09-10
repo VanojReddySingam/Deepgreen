@@ -1,7 +1,6 @@
-
 /* ---------- Global Styles ---------- */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #ffeaa7, #a29bfe, #81ecec);
   margin: 0;
   color: #2d3436;
@@ -49,7 +48,9 @@ nav a:hover::after {
 }
 
 /* ---------- Section / Forms / Containers ---------- */
-section, form, .container {
+section,
+form,
+.container {
   background: #ffffffdd;
   margin: 40px auto;
   padding: 32px;
@@ -74,7 +75,9 @@ label {
   color: #2d3436;
 }
 
-input, select, button {
+input,
+select,
+button {
   width: 100%;
   margin-top: 8px;
   padding: 12px 16px;
@@ -85,7 +88,8 @@ input, select, button {
   background-color: #f9f9ff;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   border-color: #6c5ce7;
   box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
   outline: none;
@@ -144,7 +148,7 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -166,11 +170,21 @@ button:hover {
 }
 
 /* ---------- Card Background Images ---------- */
-.soil-card { background-image: url('assets/soil.png'); }
-.fertilizer-card { background-image: url('assets/fertilizer.png'); }
-.plant-card { background-image: url('assets/plant.png'); }
-.weather-card { background-image: url('assets/weather.png'); }
-.crop-card { background-image: url('assets/crop.png'); }
+.soil-card {
+  background-image: url("assets/soil.png");
+}
+.fertilizer-card {
+  background-image: url("assets/fertilizer.png");
+}
+.plant-card {
+  background-image: url("assets/plant.png");
+}
+.weather-card {
+  background-image: url("assets/weather.png");
+}
+.crop-card {
+  background-image: url("assets/crop.png");
+}
 
 /* ---------- Action Row ---------- */
 .action-row {
@@ -201,9 +215,15 @@ button:hover {
 }
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ---------- Hero Header ---------- */
@@ -211,7 +231,7 @@ button:hover {
 .hero-header {
   width: 100%;
   height: 20vh; /* smaller height */
-  background: url('assets/farmer-ploughing.jpg') center center / cover no-repeat;
+  background: url("assets/farmer-ploughing.jpg") center center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -234,18 +254,17 @@ button:hover {
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin: 0;          /* remove top/bottom margin */
-  line-height: 1.1;   /* tighten spacing */
+  margin: 0; /* remove top/bottom margin */
+  line-height: 1.1; /* tighten spacing */
 }
 
 .hero-subtitle {
   color: #f1f1f1;
   font-size: 0.8rem;
   margin: 0.5em 0 0 0; /* only small gap above */
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   line-height: 1.3;
 }
-
 
 /* Hero content below image */
 .hero-content {
@@ -326,4 +345,3 @@ button:hover {
   width: 60px;
   height: auto;
 }
-

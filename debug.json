@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"disease\": \"Pear Leaf Spot (Fabraea maculata)\",\n  \"confidence\": \"High\",\n  \"symptoms\": \"Numerous small, reddish-brown to black spots on leaves. Spots may enlarge and coalesce, causing leaf distortion and premature defoliation.  Spots often have a darker margin and a lighter center.  Fruit can also be affected.\",\n  \"treatment\": \"Remove and destroy infected leaves in the fall.  Fungicide applications are often necessary, especially in years with high rainfall.  Copper-based fungicides or other fungicides labeled for pear leaf spot can be used.  Follow label instructions carefully. Multiple applications may be needed throughout the growing season. Consider resistant varieties in future plantings.\",\n  \"prevention\": \"Plant resistant pear cultivars if available. Ensure good air circulation by pruning to avoid overcrowding.  Remove fallen leaves promptly in autumn to reduce overwintering inoculum. Avoid overhead watering to reduce leaf wetness and fungal spread.\"\n}\n```\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.37728896578728865
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 330,
+    "candidatesTokenCount": 207,
+    "totalTokenCount": 537,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 72
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 258
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 207
+      }
+    ]
+  },
+  "modelVersion": "gemini-1.5-flash",
+  "responseId": "gGfBaICgJIzWz7IPor-3oA0"
+}
