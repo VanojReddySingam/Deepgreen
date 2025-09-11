@@ -1,5 +1,14 @@
+
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Plant Disease Detection</title>
   <link rel="stylesheet" href="style.css">

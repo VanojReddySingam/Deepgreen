@@ -351,18 +351,18 @@ button:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   text-align: left; /* Center horizontally */
   margin: 50px auto; /* vertical margin + auto horizontal centering */
-}
-.article-section2:hover { 
-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-} 
-/* Style and center the image */ 
-.article-section2 img { width: 100%; 
-height: auto;
-  display: block;
-  margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  } 
+}}
+         .article-section2:hover { 
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+         } 
+         /* Style and center the image */ 
+         .article-section2 img { width: 100%; 
+          height: auto;
+           display: block;
+            margin: 20px auto;
+             border-radius: 10px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            } 
 .article-section2 h2 { 
   font-weight: bold;
 }
