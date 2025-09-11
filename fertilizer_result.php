@@ -1,4 +1,13 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fertilizer Recommendation</title>
+  <link rel="stylesheet" href="style.css"> <!-- ✅ LINK CSS HERE -->
+</head>
+<body>
+    <h1>Fertilizers</h1>
+    <?php
 session_start();
 
 // 🔑 Keys (⚠️ move to env variables in production)
@@ -131,4 +140,7 @@ foreach ($fertilizers as $f) {
 }
 echo "</table>";
 
-echo "<br><a href='fertilizer.php'>Back</a>";
+echo "<br><a href='fertilizer.php' class='back-button'>Back</a>";
+?>
+</body>
+</html>

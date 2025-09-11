@@ -4,36 +4,36 @@
       "content": {
         "parts": [
           {
-            "text": "```json\n{\n  \"disease\": \"No disease detected\",\n  \"confidence\": \"100%\",\n  \"symptoms\": \"The image shows soil, not a plant leaf.  Therefore, no plant disease symptoms can be assessed.\",\n  \"treatment\": \"N/A\",\n  \"prevention\": \"N/A\"\n}\n```\n"
+            "text": "```json\n{\n  \"disease\": \"Apple scab\",\n  \"confidence\": \"High\",\n  \"symptoms\": \"Numerous small, dark brown or black lesions on leaves, often with a reddish-brown border. Lesions may coalesce, causing leaf distortion and defoliation.\",\n  \"treatment\": \"Apply fungicides containing chlorothalonil, mancozeb, or captan at the beginning of the growing season and repeat applications at intervals according to the product label.  Remove and destroy infected leaves and fallen fruit. Consider using resistant apple varieties.\",\n  \"prevention\": \"Plant resistant apple cultivars. Ensure good air circulation around trees to reduce humidity. Remove fallen leaves in the autumn to eliminate overwintering pathogens. Prune trees to promote air circulation and sunlight penetration. Avoid overhead watering, which can spread the disease.\"\n}\n```\n"
           }
         ],
         "role": "model"
       },
       "finishReason": "STOP",
-      "avgLogprobs": -0.018368826100700779
+      "avgLogprobs": -0.330279541015625
     }
   ],
   "usageMetadata": {
     "promptTokenCount": 330,
-    "candidatesTokenCount": 76,
-    "totalTokenCount": 406,
+    "candidatesTokenCount": 175,
+    "totalTokenCount": 505,
     "promptTokensDetails": [
-      {
-        "modality": "IMAGE",
-        "tokenCount": 258
-      },
       {
         "modality": "TEXT",
         "tokenCount": 72
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 258
       }
     ],
     "candidatesTokensDetails": [
       {
         "modality": "TEXT",
-        "tokenCount": 76
+        "tokenCount": 175
       }
     ]
   },
   "modelVersion": "gemini-1.5-flash",
-  "responseId": "xV3CaLCxGrqCz7IPw7uIiQw"
+  "responseId": "ZnPCaKuuEsWJqtsPlejZ2AQ"
 }
