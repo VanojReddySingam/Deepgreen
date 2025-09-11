@@ -1,6 +1,10 @@
 <?php
 // Start session
 session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
 
 // Show all errors for debugging
 ini_set('display_errors', 1);

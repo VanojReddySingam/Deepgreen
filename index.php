@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,12 +81,7 @@ session_start();
         </div>
       </div>
 
-      <div class="card crop-card">
-        <h3>Crop Advisory</h3>
-        <div class="action-row">
-          <a href="dashboard.php" class="start-btn">Crop Suitability Guide</a>
-        </div>
-      </div>
+      
 
     </div>
   </section>
