@@ -1,7 +1,7 @@
 /* ---------- Global Styles ---------- */
 body {
-  font-family: 'Lato', sans-serif;
-  background: linear-gradient(to right, #f0fff0, #ffffff);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffeaa7, #a29bfe, #81ecec);
   margin: 0;
   color: #1b1b1b;
   transition: background 0.6s ease;
@@ -14,7 +14,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background: linear-gradient(90deg, #2c5f2d, #a3e635);
+  background: linear-gradient(90deg, #023a1b, #03da15);
   color: #fff;
   padding: 18px 36px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -39,7 +39,7 @@ nav a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background: #fff176;
+  background: #e4e70e;
   transition: width 0.3s ease;
 }
 
@@ -48,8 +48,10 @@ nav a:hover::after {
 }
 
 /* ---------- Section / Forms / Containers ---------- */
-section, form, .container {
-  background: #ffffff;
+section,
+form,
+.container {
+  background: #ffffffdd;
   margin: 40px auto;
   padding: 32px;
   border-radius: 14px;
@@ -74,7 +76,9 @@ label {
   color: #1b1b1b;
 }
 
-input, select, button {
+input,
+select,
+button {
   width: 100%;
   margin-top: 8px;
   padding: 12px 16px;
@@ -85,9 +89,10 @@ input, select, button {
   background-color: #f9fff9;
 }
 
-input:focus, select:focus {
-  border-color: #76c893;
-  box-shadow: 0 0 0 4px rgba(118, 200, 147, 0.3);
+input:focus,
+select:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
   outline: none;
 }
 
@@ -147,7 +152,7 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -170,11 +175,21 @@ button:hover {
 }
 
 /* ---------- Card Background Images ---------- */
-.soil-card { background-image: url('assets/soil.png'); }
-.fertilizer-card { background-image: url('assets/fertilizer.png'); }
-.plant-card { background-image: url('assets/plant.png'); }
-.weather-card { background-image: url('assets/weather.png'); }
-.crop-card { background-image: url('assets/crop.png'); }
+.soil-card {
+  background-image: url("assets/soil.png");
+}
+.fertilizer-card {
+  background-image: url("assets/fertilizer.png");
+}
+.plant-card {
+  background-image: url("assets/plant.png");
+}
+.weather-card {
+  background-image: url("assets/weather.png");
+}
+.crop-card {
+  background-image: url("assets/crop.png");
+}
 
 /* ---------- Action Row ---------- */
 .action-row {
@@ -204,11 +219,23 @@ button:hover {
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* ---------- Hero Header ---------- */
 .hero-header {
   width: 100%;
-  height: 45vh;
-  background: url('assets/farmer-ploughing.jpg') center 40%/ cover no-repeat;
+  height: 40vh;
+  background: url("assets/farmer-ploughing.jpg") center 40% / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -220,7 +247,6 @@ button:hover {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,13 +327,67 @@ button:hover {
 /* ---------- Side by Side Articles ---------- */
 .article-container {
   display: flex;
-  gap: 3em;
+  gap: 2em;
   max-width: 1200px;
   margin: 3em auto;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .article-container .article-section {
   flex: 1 1 48%;
-  max-width: 43%;
+  max-width: 42%;
 }
+
+.forecast-day img {
+  width: 60px;
+  height: auto;
+}
+.article-section2 { 
+  max-width: 700px;
+   width: 100%;
+  background: #ffffff;
+  padding: 25px; border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Center horizontally */
+  margin: 50px auto; /* vertical margin + auto horizontal centering */
+       }
+         .article-section2:hover { 
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+         } 
+         /* Style and center the image */ 
+         .article-section2 img { width: 100%; 
+          height: auto;
+           display: block;
+            margin: 20px auto;
+             border-radius: 10px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            } 
+.article-section2 h2 { 
+  font-weight: bold;
+}
+
+/* ---------- Style ONLY for the "Back" button ---------- */
+.back-button {
+  display: block;
+  margin: 40px auto;
+  padding: 12px 24px;
+  width: fit-content;
+  background-color: #a3e635;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(163, 230, 53, 0.4);
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #bdfc9c;
+  transform: scale(1.05);
+  color: #111;
+}
+
+

@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"disease\": \"Pear Leaf Spot (caused by Fabraea maculata)\",\n  \"confidence\": \"High\",\n  \"symptoms\": \"Numerous small, reddish-brown to orange spots on the leaves. Spots may enlarge and coalesce, eventually causing leaf distortion and premature defoliation.  Lesions can also appear on fruit.\",\n  \"treatment\": \"Fungicide application is often necessary, especially during periods of leaf wetness.  Copper-based fungicides or other broad-spectrum fungicides labeled for pear leaf spot can be effective.  Proper timing of applications is crucial. Consult your local agricultural extension office for specific recommendations on fungicides and application schedules for your region.\",\n  \"prevention\": \"Good sanitation is key.  Remove and destroy fallen leaves in the autumn to reduce overwintering inoculum.  Ensure proper air circulation around the trees to promote rapid drying.  Choose resistant pear cultivars if available.  Avoid overhead irrigation whenever possible.\"\n}\n```\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.33084396734470273
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 330,
+    "candidatesTokenCount": 205,
+    "totalTokenCount": 535,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 72
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 258
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 205
+      }
+    ]
+  },
+  "modelVersion": "gemini-1.5-flash",
+  "responseId": "3XnCaMq3I-SJz7IPo8Tw2Q0"
+}

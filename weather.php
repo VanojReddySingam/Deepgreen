@@ -118,6 +118,30 @@ if (isset($_GET['city']) && !empty(trim($_GET['city']))) {
     }
 }
 ?>
+<!-- Article Section -->   
+<div class="article-container">   
+  <article class="article-section">   
+    <h2>Weather</h2>   
+    <img src="assets/weather.jpg" alt="Weather" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      Weather refers to the atmospheric conditions at a specific place and time, including temperature, humidity, wind, rainfall, and pressure. It plays a crucial role in daily life and directly impacts agriculture, transportation, and overall human activity.
+    </p>   
+    <p>   
+      Understanding weather patterns helps farmers plan their planting and harvesting schedules, while also preparing for extreme conditions like storms or droughts. Advances in weather forecasting have significantly improved the ability to anticipate and respond to these changes.
+    </p>   
+  </article> <!-- Article Section -->  
+  
+  <article class="article-section">   
+    <h2>Weathers in India</h2>   
+    <img src="assets/weather-india.jpg" alt="Weathers in India" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      India experiences a wide range of weather conditions due to its vast geography, including tropical, arid, temperate, and alpine climates. The country mainly has four distinct seasons: summer, monsoon, post-monsoon (autumn), and winter.
+    </p>   
+    <p>   
+      The monsoon season, from June to September, is particularly important as it provides essential rainfall for agriculture. Regional weather variations—such as the dry deserts of Rajasthan or the heavy rains of the Western Ghats—shape the livelihoods, crops, and culture in each area.
+    </p>   
+  </article>        
+</div>
 
 </body>
 </html>
