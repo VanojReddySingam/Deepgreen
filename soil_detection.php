@@ -58,6 +58,42 @@
       document.getElementById('result').innerHTML = data;
     });
   </script>
+  <!-- Article Section -->   
+<div class="article-container">   
+  <article class="article-section">   
+    <h2>Soil</h2>   
+    <img src="assets/soil.jpg" alt="Soil" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      Soil is a vital natural resource that supports plant life and ecosystems. It is composed of minerals, organic matter, water, and air, forming the foundation for agriculture and forestry. The health of soil directly affects crop productivity, water retention, and biodiversity.  
+    </p>   
+    <p>   
+      Different types of soil, such as sandy, clay, silt, and loam, have varying properties influencing their use and management. Proper soil management practices, including erosion control and organic amendments, are essential to maintain soil health and prevent degradation.   
+    </p>   
+  </article> <!-- Article Section -->  
+  
+  <article class="article-section">   
+    <h2>Soil Fertility</h2>   
+    <img src="assets/soil-fertility.jpg" alt="Soil Fertility" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      Soil fertility refers to the ability of soil to supply essential nutrients to plants in adequate amounts for growth. It depends on factors like nutrient content, soil pH, organic matter, and microbial activity. Fertile soil ensures healthy crops and higher yields.  
+    </p>   
+    <p>   
+      Maintaining soil fertility involves practices such as crop rotation, green manuring, balanced fertilization, and minimizing soil erosion. Sustainable soil fertility management plays a crucial role in long-term agricultural productivity and environmental conservation.  
+    </p>   
+  </article>        
+</div>       
+
+<article class="article-section2">   
+  <h2>Soils in India</h2>   
+  <img src="assets/soils-india.jpg" alt="Soils in India" />   
+  <p>   
+    India has diverse soil types ranging from alluvial, black, red, laterite, to desert soils, each supporting different agricultural activities. Alluvial soils are highly fertile and found in the Indo-Gangetic plains, while black soils are rich in clay and ideal for cotton cultivation.  
+  </p>   
+  <p>   
+    Soil management in India faces challenges such as erosion, salinity, and nutrient depletion due to intensive farming. Efforts to improve soil health include promoting organic farming, soil testing, and adopting region-specific soil conservation techniques to enhance agricultural sustainability.  
+  </p>   
+</article>
+
 </body>
 
 </html>

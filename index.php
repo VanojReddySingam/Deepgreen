@@ -104,18 +104,21 @@ session_start();
 <!-- Article Section -->
 
 <article class="article-section">
-  <h2>Sustainable Farming</h2>
-  <img src="assets/sustainable-farming.jpg" alt="Sustainable Farming" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+  <h2>Agriculture: The Backbone of Indiaa economy</h2>
+  <img src="assets/agriculture-india.jpg" alt="Agriculture in India" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
   <p>
-    As agriculture moves toward more sustainable practices, technologies like AI-based plant disease detection,
-    precision fertilizer recommendations, and weather-integrated crop planning are reshaping the future of farming.
-  </p>
-  <p>
-    DeepGreen is committed to empowering farmers with tools that increase yield, reduce waste, and promote eco-friendly practices. 
-    Stay tuned as we continue to roll out features and guides to support our green revolution.
+    Agriculture is the backbone of India’s economy, providing livelihoods for over half the population and driving growth through a mix of traditional and modern farming practices that ensure food security and rural development.
   </p>
 </article>
+
       </div>
+      <article class="article-section2">
+  <h2>Emerging Trends in Agriculture</h2>
+  <img src="assets/emerging-agri-trends.jpg" alt="Emerging Agriculture Trends" />
+  <p>
+    Agriculture is rapidly evolving with trends like vertical farming, smart drones, gene editing, and precision agriculture improving efficiency and sustainability. Technologies such as hydroponics, regenerative practices, and climate-smart strategies are reshaping how we grow food, making farming more resilient and eco-friendly.
+  </p>
+</article>
 
 
   <!-- Footer -->
