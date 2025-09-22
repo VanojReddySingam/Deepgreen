@@ -73,14 +73,19 @@ if (!isset($_SESSION['username'])) {
           <a href="disease_detection.php" class="start-btn">Detect Disease</a>
         </div>
       </div>
-
+      <div class="card crop-card">
+        <h3>Crop Advisory</h3>
+        <div class="action-row">
+          <a href="crop.php" class="start-btn">crop Advisory</a>
+        </div>
+      </div>
       <div class="card weather-card">
         <h3>Weather Dashboard</h3>
         <div class="action-row">
           <a href="weather.php" class="start-btn">Check Weather</a>
         </div>
       </div>
-
+      
       
 
     </div>
