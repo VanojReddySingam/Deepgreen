@@ -422,3 +422,111 @@ height: auto;
   }
 }
 
+/* ---------- Crop Advisory Section ---------- */
+.crop-section {
+  background: #ffffffdd;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 14px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.9s ease forwards;
+  opacity: 0;
+  border-left: 6px solid #55efc4;
+}
+
+.crop-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #1b1b1b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crop-section label {
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  color: #1b1b1b;
+}
+
+.crop-section input,
+.crop-section select,
+.crop-section button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #cce5cc;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  background-color: #f9fff9;
+}
+
+.crop-section input:focus,
+.crop-section select:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
+  outline: none;
+}
+
+.crop-section button {
+  background: linear-gradient(90deg, #a3e635, #55efc4);
+  color: #1b1b1b;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(163, 230, 53, 0.3);
+  transition: all 0.4s ease;
+}
+
+.crop-section button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #b2fba5, #81ecec);
+  box-shadow: 0 12px 28px rgba(163, 230, 53, 0.5);
+}
+
+/* ---------- Crop Advisory Result ---------- */
+#crop-result {
+  background: #ffffffdd;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-top: 24px;
+  white-space: pre-wrap;
+  font-size: 1em;
+  line-height: 1.6;
+  border-left: 6px solid #a3e635;
+  animation: fadeIn 0.9s ease forwards;
+  opacity: 0;
+}
+
+#crop-result h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+#crop-result ul {
+  margin: 8px 0 12px 20px;
+}
+
+#crop-result li {
+  margin-bottom: 6px;
+}
+.back-button {
+  background-color: #f44336; /* Red background */
+  color: white;               /* White text */
+  border: none;               /* Remove border */
+  padding: 10px 20px;         /* Padding */
+  font-size: 16px;            /* Font size */
+  border-radius: 5px;         /* Rounded corners */
+  cursor: pointer;            /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.back-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
