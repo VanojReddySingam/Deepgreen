@@ -13,7 +13,7 @@ echo '
   <a href="fertilizer.php">Fertilizer Advisor</a>
   <a href="disease_detection.php">Disease Detection</a>
   <a href="weather.php">Weather</a>
-  <a href="crop.php">crop</a>'
+  <a href="crop.php">crop Advisory</a>'
   ;
 
 // Show Logout at the end if user is signed in

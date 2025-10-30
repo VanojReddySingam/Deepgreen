@@ -13,6 +13,7 @@ if (!isset($_SESSION['username'])) {
   <link rel="stylesheet" href="style.css"> <!-- Link your existing CSS -->
 </head>
 <body>
+<?php include 'nav.php'; ?>
   <section class="crop-section">
     <h2>Crop Advisory System</h2>
     <form id="cropForm">
@@ -34,6 +35,13 @@ if (!isset($_SESSION['username'])) {
         <option value="Monsoon">Monsoon</option>
         <option value="Winter">Winter</option>
       </select>
+      <label for="crop_season">Crop Season:</label>
+<select id="crop_season" name="crop_season" required>
+  <option value="">--Select--</option>
+  <option value="Rabi">Rabi</option>
+  <option value="Kharif">Kharif</option>
+  <option value="Zaid">Zaid</option>
+</select>
 
       <label for="water_availability">Water Availability:</label>
       <select id="water_availability" name="water_availability" required>
@@ -63,11 +71,13 @@ if (!isset($_SESSION['username'])) {
       resultDiv.innerHTML = "Processing... please wait.";
 
       const formData = {
-        soil_type: document.getElementById('soil_type').value,
-        season: document.getElementById('season').value,
-        water_availability: document.getElementById('water_availability').value,
-        area_size: document.getElementById('area_size').value
-      };
+  soil_type: document.getElementById('soil_type').value,
+  season: document.getElementById('season').value,
+  water_availability: document.getElementById('water_availability').value,
+  area_size: document.getElementById('area_size').value,
+  crop_season: document.getElementById('crop_season').value   // new field
+};
+
 
       try {
         const response = await fetch('process.php', {
@@ -100,5 +110,29 @@ if (!isset($_SESSION['username'])) {
       }
     });
   </script>
+  <div class="article-container">   
+  <article class="article-section">   
+    <h2>Crops</h2>   
+    <img src="assets/cropss.jpg" alt="Crops" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      Crops refer to cultivated plants grown for food, fiber, fuel, or other agricultural purposes. They are an essential part of human life and play a major role in the economy, nutrition, and daily sustenance.
+    </p>   
+    <p>   
+      Understanding different crop types, their growth requirements, and seasonal patterns helps farmers maximize yield and maintain soil health. Technological advances in agriculture have also improved crop management and production efficiency.
+    </p>   
+  </article> <!-- Article Section -->  
+   
+  <article class="article-section">   
+    <h2>Cropping in India</h2>   
+    <img src="assets/cropping-india.jpg" alt="Cropping in India" style="width:100%; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />   
+    <p>   
+      India has diverse cropping patterns due to its varied climate, soil types, and geography. Major crops include rice, wheat, maize, pulses, cotton, and sugarcane, with regional variations influencing what is grown.
+    </p>   
+    <p>   
+      Cropping practices in India are influenced by the monsoon, irrigation availability, and traditional agricultural methods. Efficient crop rotation, mixed cropping, and modern farming techniques help improve yields and sustain agricultural productivity.
+    </p>   
+  </article>        
+</div>
+
 </body>
 </html>

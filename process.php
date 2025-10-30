@@ -34,7 +34,8 @@ if (!$data) {
     exit;
 }
 
-$required = ['soil_type','season','water_availability','area_size'];
+$required = ['soil_type','season','water_availability','area_size','crop_season'];
+
 foreach ($required as $r) {
     if (empty($data[$r])) {
         http_response_code(400);

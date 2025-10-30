@@ -393,34 +393,7 @@ height: auto;
 
 /* Put near the end of your CSS file */
 
-/* Force 3 columns on wider screens */
-@media (min-width: 900px) {
-  .feature-grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-  }
 
-  /* Place weather card in the middle column */
-  .weather-card {
-    grid-column: 2 / 3;        /* put in column 2 */
-    justify-self: center;      /* center inside that column */
-    max-width: 380px;          /* avoid stretching */
-    width: 100%;
-  }
-}
-
-/* On narrow screens, revert to the auto-fit behavior */
-@media (max-width: 899px) {
-  .feature-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  .weather-card {
-    grid-column: auto;
-    justify-self: center;
-    max-width: none;
-    width: 100%;
-  }
-}
 
 /* ---------- Crop Advisory Section ---------- */
 .crop-section {
