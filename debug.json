@@ -4,19 +4,19 @@
       "content": {
         "parts": [
           {
-            "text": "```json\n{\n  \"disease\": \"Apple scab\",\n  \"confidence\": \"High\",\n  \"symptoms\": \"Numerous small, dark brown or black lesions on leaves, often with a reddish-brown border. Lesions may coalesce, causing leaf distortion and defoliation.\",\n  \"treatment\": \"Apply fungicides containing chlorothalonil, mancozeb, or captan at the beginning of the growing season and repeat applications at intervals according to the product label.  Remove and destroy infected leaves and fallen fruit. Consider using resistant apple varieties.\",\n  \"prevention\": \"Plant resistant apple cultivars. Ensure good air circulation around trees to reduce humidity. Remove fallen leaves in the autumn to eliminate overwintering pathogens. Prune trees to promote air circulation and sunlight penetration. Avoid overhead watering, which can spread the disease.\"\n}\n```\n"
+            "text": "```json\n{\n  \"disease\": \"Black spot\",\n  \"confidence\": \"High\",\n  \"symptoms\": \"Dark brown to black spots on leaves, often with a fringed edge. Spots can coalesce, causing leaves to yellow and drop prematurely.\",\n  \"treatment\": \"Remove and destroy infected leaves. Apply a fungicide containing mancozeb, chlorothalonil, or copper.  Good air circulation is crucial. Consider disease-resistant rose varieties.\",\n  \"prevention\": \"Plant disease-resistant rose varieties. Ensure good air circulation around plants by spacing them appropriately and pruning to open the canopy. Avoid overhead watering, which can spread the disease. Clean up fallen leaves in autumn to remove overwintering fungal spores.\"\n}\n```\n"
           }
         ],
         "role": "model"
       },
       "finishReason": "STOP",
-      "avgLogprobs": -0.330279541015625
+      "avgLogprobs": -0.15592665550036308
     }
   ],
   "usageMetadata": {
     "promptTokenCount": 330,
-    "candidatesTokenCount": 175,
-    "totalTokenCount": 505,
+    "candidatesTokenCount": 156,
+    "totalTokenCount": 486,
     "promptTokensDetails": [
       {
         "modality": "TEXT",
@@ -30,10 +30,10 @@
     "candidatesTokensDetails": [
       {
         "modality": "TEXT",
-        "tokenCount": 175
+        "tokenCount": 156
       }
     ]
   },
   "modelVersion": "gemini-1.5-flash",
-  "responseId": "ZnPCaKuuEsWJqtsPlejZ2AQ"
+  "responseId": "DajPaMzyAd2KqtsPkovY6Ag"
 }

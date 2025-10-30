@@ -34,7 +34,7 @@ if (!isset($_SESSION['username'])) {
 
 <?php include 'nav.php'; ?>
 
-<h2>Check Current Weather & 5‑Day Forecast</h2>
+<h2>Check Current Weather & 6‑Day Forecast</h2>
 
 <form method="GET">
   <input type="text" name="city" placeholder="Enter City" required>
@@ -94,7 +94,7 @@ if (isset($_GET['city']) && !empty(trim($_GET['city']))) {
     $fc = json_decode($forecastResponse);
 
     if ($fc && isset($fc->cod) && $fc->cod == "200") {
-        echo "<h3>5‑Day Forecast</h3>";
+        echo "<h3>6‑Day Forecast</h3>";
         echo "<div class='forecast-container'>";
 
         $grouped = [];
