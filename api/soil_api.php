@@ -2,7 +2,7 @@
 // Farmers AI Assistant 🚜
 // Expo quick-demo version (API key inline, no env)
 
-$apiKey = "AIzaSyDPkKH6qBKtSWkK5ehS0lSphoAkS4pHfmo"; // ⚠️ paste your Gemini API key here
+$apiKey = "API KEY"; // ⚠️ paste your Gemini API key here
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
